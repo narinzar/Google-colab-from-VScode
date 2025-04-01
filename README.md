@@ -24,7 +24,7 @@ Open a new Google Colab notebook and execute the following commands:
 ```python
 !pip install colab_ssh --upgrade
 from colab_ssh import launch_ssh_cloudflared
-launch_ssh_cloudflared(password="your_password")
+launch_ssh_cloudflared(password="colab")  #This will be your password for authentication within VScode later 
 ```
 This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.trycloudflare.com`). Copy this URL for later use.
 
