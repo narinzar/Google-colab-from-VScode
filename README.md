@@ -28,7 +28,7 @@ launch_ssh_cloudflared(password="colab")  # This will be your password for authe
 
 This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.trycloudflare.com`). Copy this URL for later use.
 
-📌 **[Open a New Google Colab Notebook](https://colab.research.google.com/#create=true)**  
+📌 **[Open Colab with SSH Setup](https://colab.research.google.com/#create=true&snippet=true&code=%21pip%20install%20colab_ssh%20--upgrade%0Afrom%20colab_ssh%20import%20launch_ssh_cloudflared%0Alaunch_ssh_cloudflared%28password%3D%22colab%22%29)**  
 
 ### Important:
 
@@ -135,6 +135,6 @@ if torch.cuda.is_available():
 ## Conclusion
 Following these steps, you can now seamlessly connect to Google Colab via SSH, use VS Code for remote development, and manage your projects efficiently.  
 
-📌 **[Open a New Google Colab Notebook](https://colab.research.google.com/#create=true)**  
+📌 **[Open Colab with SSH Setup](https://colab.research.google.com/#create=true&snippet=true&code=%21pip%20install%20colab_ssh%20--upgrade%0Afrom%20colab_ssh%20import%20launch_ssh_cloudflared%0Alaunch_ssh_cloudflared%28password%3D%22colab%22%29)**  
 
 Test your setup by running the PyTorch script to confirm GPU availability. 🚀
