@@ -33,11 +33,9 @@ This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.tr
 Before proceeding, make sure your Colab runtime is set to an A100 GPU for optimal performance.
 To check or change the runtime:
 
-Click on Runtime in the Colab menu.
-
-Select Change runtime type.
-
-Choose GPU (A100 preferred) under Hardware accelerator.
+- Click on Runtime in the Colab menu.
+- Select Change runtime type.
+- Choose GPU (A100 preferred) under Hardware accelerator.
 
 
 ---
