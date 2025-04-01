@@ -37,7 +37,7 @@ To check or change the runtime:
 - Select Change runtime type.
 - Choose GPU (A100 preferred) under Hardware accelerator.
 
-
+# Note: Step 2 through 5 only required the first time
 ---
 ### 2. Install Cloudflare CLI on Windows
 Run the following command in PowerShell:
