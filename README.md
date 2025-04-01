@@ -28,7 +28,7 @@ launch_ssh_cloudflared(password="your_password")
 ```
 This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.trycloudflare.com`). Copy this URL for later use.
 
- Important:
+ ### Important:
 
 Before proceeding, make sure your Colab runtime is set to an A100 GPU for optimal performance.
 To check or change the runtime:
