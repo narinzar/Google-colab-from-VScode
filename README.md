@@ -28,7 +28,8 @@ launch_ssh_cloudflared(password="colab")  # This will be your password for authe
 
 This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.trycloudflare.com`). Copy this URL for later use.
 
-📌 **[Open Colab with SSH Setup](https://colab.research.google.com/#create=true&snippet=true&code=%21pip%20install%20colab_ssh%20--upgrade%0Afrom%20colab_ssh%20import%20launch_ssh_cloudflared%0Alaunch_ssh_cloudflared%28password%3D%22colab%22%29)**  
+📌 ** [Open Colab with SSH Setup](https://colab.research.google.com/#create=true&snippet=true&code=%21pip%20install%20colab_ssh%20--upgrade%0Afrom%20colab_ssh%20import%20launch_ssh_cloudflared%0Alaunch_ssh_cloudflared%28password%3D%22colab%22%29) **
+
 
 ### Important:
 
