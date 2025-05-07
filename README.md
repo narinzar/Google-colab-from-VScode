@@ -27,7 +27,7 @@ Open a new Google Colab notebook and execute the following commands:
 from colab_ssh import launch_ssh_cloudflared
 launch_ssh_cloudflared(password="colab")  # This will be your password for authentication within VS Code later
 ```
-
+    
 This will generate a Cloudflare Tunnel URL (e.g., `yesterday-locks-slides-upc.trycloudflare.com`). Copy this URL for later use.
 
 
@@ -132,6 +132,21 @@ if torch.cuda.is_available():
 - If a GPU is available, you should see the CUDA-enabled device name.  
 - If not, `torch.cuda.is_available()` will return `False`, meaning no GPU is detected.  
 
+###### TIME out due to inactivity:
+
+This script is designed to keep a Google Colab session active by continuously running a loop that prints a message every 60 seconds. The clear_output(wait=True) function is used to clear the previous output before printing the new message, ensuring that the output cell remains clean. This approach helps prevent the Colab session from timing out due to inactivity, which is particularly useful for long-running tasks or when you need to keep the session alive for an extended period.
+
+```
+import time
+from IPython.display import clear_output
+
+while True:
+    # Print output every 60 seconds
+    print("Keeping session alive", time.strftime("%H:%M:%S"))
+    clear_output(wait=True)
+    time.sleep(60)
+```
+
 ---
 ## Conclusion
 Following these steps, you can now seamlessly connect to Google Colab via SSH, use VS Code for remote development, and manage your projects efficiently.  
@@ -139,3 +154,6 @@ Following these steps, you can now seamlessly connect to Google Colab via SSH, u
 📌 **[Open Google Colab](https://colab.research.google.com/#create=true) (Right-click and open in a new tab)**  
 
 Test your setup by running the PyTorch script to confirm GPU availability. 🚀
+
+
+
